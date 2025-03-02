@@ -15,37 +15,12 @@ namespace Alarm501
             InitializeComponent();
             controller = new AlarmController(this);
             controller.LoadAlarms();
-            UpdateUI();  // Ensure the UI is updated on form load
+            UpdateUI(); 
             label2.Visible = false;
             label1.Text = "";
             button1.Enabled = false;
             button2.Enabled = false;
 
-            // Subscribe to alarm events to handle triggers and snooze actions
-            // controller.AlarmTriggered += Controller_AlarmTriggered;
-            //  controller.SnoozeTriggered += Controller_SnoozeTriggered;
-        }
-
-        // Event handler when an alarm is triggered
-        private void Controller_AlarmTriggered(Alarm alarm)
-        {
-            poppinalarm = alarm;  // Set the active alarm
-            label1.Text = $"Alarm Triggered! {alarm.SelectedSound}";  // Update UI to show alarm triggered
-            label2.Visible = true;
-            button1.Enabled = true;  // Enable Stop button
-            button2.Enabled = true;  // Enable Snooze button
-        }
-
-        // Event handler when an alarm snooze is triggered
-        private void Controller_SnoozeTriggered(Alarm alarm)
-        {
-            label2.Visible = false;
-            label1.Visible = false;
-            button2.Enabled = false;
-            button1.Enabled = false;
-
-            // After snoozing, update the alarm's time and show the updated status
-            UpdateUI();
         }
 
         // Method to update the UI based on the current alarms in the list
@@ -65,7 +40,7 @@ namespace Alarm501
                 }
             }
 
-            // Enable/Disable Add button based on the number of alarms
+            // Disable Add button based on the number of alarms (more than 5)
             UxAddBtn.Enabled = controller.GetAlarms().Count < 5;
         }
 
@@ -137,7 +112,6 @@ namespace Alarm501
             // Get the indices of selected items
             var selectedIndices = UxAlarmList.SelectedIndices.Cast<int>().ToList();
 
-            // Remove items starting from the highest index to avoid shifting issues
             for (int i = selectedIndices.Count - 1; i >= 0; i--)
             {
                 controller.RemoveAlarm(selectedIndices[i]);

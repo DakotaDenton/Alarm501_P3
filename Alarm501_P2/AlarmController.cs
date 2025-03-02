@@ -10,7 +10,7 @@ namespace Alarm501
 {
     public class AlarmController
     {
-        private Alarm501 view;  // The main view (Alarm501) that will display the alarms
+        private Alarm501 view;  
         private List<Alarm> alarms = new List<Alarm>();
         private System.Windows.Forms.Timer timer;
 
@@ -19,7 +19,7 @@ namespace Alarm501
             this.view = view;
             this.alarms = new List<Alarm>();
             this.timer = new System.Windows.Forms.Timer();
-            this.timer.Interval = 1000;  // Check every second
+            this.timer.Interval = 1000; 
             this.timer.Tick += AlarmTimer_Tick;
             this.timer.Start();
             LoadAlarms();
@@ -113,9 +113,8 @@ namespace Alarm501
 
             foreach (var alarm in alarms)
             {
-                // If the current time matches the alarm time (minute and hour), trigger it
-                if (alarm.Time.Hour == currentTime.Hour && alarm.Time.Minute == currentTime.Minute && alarm.Time.Second == currentTime.Second)
-                {
+                // If the current time matches the alarm time (minute and hour and second), trigger it
+                if (alarm.Time.Hour == currentTime.Hour && alarm.Time.Minute == currentTime.Minute && alarm.Time.Second == currentTime.Second && alarm.RepeatDays.Contains(currentTime.DayOfWeek)) { 
                     TriggerAlarm(alarm);
                 }
             }
@@ -126,7 +125,7 @@ namespace Alarm501
             // Deactivate the alarm after it has triggered
             alarm.IsOn = false;
 
-            MessageBox.Show("Trigger Alarm");////////////////////////////////////////////////////////////////////////////
+            MessageBox.Show(alarm.SelectedSound.ToString());
 
             // Play the appropriate sound based on the alarm's selected sound
             PlaySound(alarm.SelectedSound);
@@ -174,7 +173,6 @@ namespace Alarm501
         {
             // Logic for handling snooze when triggered
             alarm.Time = alarm.Time.AddMinutes(alarm.SnoozeTime); // Add snooze time
-            MessageBox.Show("OnSnoozeTriggered");/////////////////////////////////////
 
             // Re-enable the alarm
             alarm.IsOn = true;
@@ -182,15 +180,12 @@ namespace Alarm501
             SaveAlarms();
             view.UpdateUI();
 
-            // Optionally show a message or feedback
-            view.label1.Text = $"Alarm snoozed for {alarm.SnoozeTime} minutes.";
         }
         private void OnAlarmTriggered(Alarm alarm)
         {
-            MessageBox.Show("ONAlarmTriggered");///////////////////////////////
 
             // Logic for handling alarm triggered
-            TriggerAlarm(alarm);  // This can be customized further based on needs
+            TriggerAlarm(alarm); 
         }
     }
 }

@@ -51,7 +51,8 @@
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(177, 23);
             dateTimePicker1.TabIndex = 0;
-            dateTimePicker1.Value = new DateTime(2025, 3, 1, 20, 6, 35, 561);
+            DateTime x = DateTime.Now.AddSeconds(15);
+            dateTimePicker1.Value = x;
             // 
             // UXSetAlarmBtn
             // 
@@ -96,7 +97,6 @@
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(188, 166);
             checkedListBox1.TabIndex = 4;
-            checkedListBox1.SelectedIndexChanged += checkedListBox1_SelectedIndexChanged;
             // 
             // checkedListBox2
             // 
@@ -106,7 +106,6 @@
             checkedListBox2.Name = "checkedListBox2";
             checkedListBox2.Size = new Size(188, 166);
             checkedListBox2.TabIndex = 5;
-            checkedListBox2.SelectedIndexChanged += checkedListBox2_SelectedIndexChanged;
             // 
             // numericUpDown1
             // 

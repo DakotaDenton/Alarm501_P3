@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Alarm501_P2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+256427c6d93bf2191f3b9cfe9a996b3f3af0328e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Alarm501_P2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Alarm501_P2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

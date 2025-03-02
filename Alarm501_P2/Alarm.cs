@@ -50,7 +50,6 @@ namespace Alarm501
         // Method to trigger the snooze (raise the SnoozeTriggered event)
         public void TriggerSnooze()
         {
-            MessageBox.Show("Trigger Snooze");
             if (SnoozeTriggered != null)
             {
                 SnoozeTriggered(this);

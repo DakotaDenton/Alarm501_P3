@@ -1,0 +1,4 @@
+02:47 PM,True,1,Radar,Friday,Saturday
+02:47 PM,True,1,Radar,Saturday
+02:47 PM,True,1,Radar,
+02:48 PM,False,1,Radar,Sunday,Saturday

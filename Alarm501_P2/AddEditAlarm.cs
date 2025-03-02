@@ -17,8 +17,10 @@ namespace Alarm501
             InitializeComponent();
             PopulateRepeatDays();
             PopulateSoundList();
-            checkedListBox2.ItemCheck += checkedListBox2_ItemCheck;
+            checkedListBox2.ItemCheck += checkedListBox2_ItemCheck; //makes sure only one sound is selected
+
         }
+
 
         public AddEditAlarm(Alarm existingAlarm)
         {
@@ -41,7 +43,7 @@ namespace Alarm501
             }
 
             PopulateSoundList();
-            // Set the selected sound in checkedListBox2 (if any)
+            // Set the selected sound in checkedListBox2
             int soundIndex = checkedListBox2.Items.IndexOf(existingAlarm.SelectedSound.ToString());
             if (soundIndex >= 0)
             {
@@ -51,36 +53,31 @@ namespace Alarm501
 
         private void UXSetAlarmBtn_Click(object sender, EventArgs e)
         {
-            DateTime selectedTime = dateTimePicker1.Value;
-            bool isOn = checkBox1.Checked;
+            // Create the new alarm object with the selected values
+            NewAlarm = new Alarm(dateTimePicker1.Value,checkBox1.Checked,GetSelectedSound(),(int)numericUpDown1.Value, GetSelectedRepeatDays());
 
-            // Get the selected sound from the CheckedListBox
-            string selectedSoundName = checkedListBox2.SelectedItem?.ToString();
-            AlarmSound selectedSound = AlarmSound.Radar; // Default sound
-
-            // If a sound is selected, update the selectedSound variable
-            if (!string.IsNullOrEmpty(selectedSoundName) && Enum.TryParse(selectedSoundName, out AlarmSound parsedSound))
-            {
-                selectedSound = parsedSound;
-            }
-            int snoozeTime = (int)numericUpDown1.Value;
-
-            // Get the selected repeat days from checkedListBox1
-            DayOfWeek[] selectedDays = checkedListBox1.CheckedItems.Cast<string>()
-                .Select(day => (DayOfWeek)Enum.Parse(typeof(DayOfWeek), day))
-                .ToArray();
-
-            // Create the new alarm object
-            NewAlarm = new Alarm(selectedTime, isOn, selectedSound, snoozeTime, selectedDays);
-
-            // Close the form after setting the alarm
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-            if (textBox1.Text.Length > 0)
+            // Set the alarm label if text is provided
+            if (!string.IsNullOrEmpty(textBox1.Text))
             {
                 NewAlarm.label = textBox1.Text;
             }
 
+            // Close the form with OK result
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
+        // Helper method to get the selected sound
+        private AlarmSound GetSelectedSound()
+        {
+            string selectedSoundName = checkedListBox2.SelectedItem?.ToString();
+            return Enum.TryParse(selectedSoundName, out AlarmSound parsedSound) ? parsedSound : AlarmSound.Radar;
+        }
+
+        // Helper method to get the selected repeat days
+        private DayOfWeek[] GetSelectedRepeatDays()
+        {
+            return checkedListBox1.CheckedItems.Cast<string>().Select(day => (DayOfWeek)Enum.Parse(typeof(DayOfWeek), day)).ToArray();
         }
 
         private void UxCancelEditAlarmBtn_Click(Object sender, EventArgs e)
@@ -88,14 +85,6 @@ namespace Alarm501
             this.Close();
         }
 
-        private void checkedListBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void PopulateRepeatDays()
         {
@@ -114,7 +103,7 @@ namespace Alarm501
 
         private void checkedListBox2_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            // If an item is being checked, uncheck all other items
+            // If a sound is being checked, uncheck all other
             if (e.NewValue == CheckState.Checked)
             {
                 for (int i = 0; i < checkedListBox2.Items.Count; i++)
@@ -126,5 +115,7 @@ namespace Alarm501
                 }
             }
         }
+
+
     }
 }
