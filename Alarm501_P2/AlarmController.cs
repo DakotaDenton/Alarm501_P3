@@ -163,8 +163,7 @@ namespace Alarm501
                     break;
 
                 default:
-                    // Play a default sound if no match is found
-                    SystemSounds.Beep.Play();
+                    view.label1.Text = "using radar";
                     break;
             }
         }
