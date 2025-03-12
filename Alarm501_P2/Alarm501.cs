@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Reflection.Emit;
-using System.Runtime.CompilerServices;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Alarm501
@@ -10,17 +9,22 @@ namespace Alarm501
         private AlarmController controller;
         public Alarm poppinalarm = null;  // This holds the active alarm that triggered
 
-        public Alarm501()
+        // Constructor that accepts an AlarmController object
+        public Alarm501(AlarmController controller)
         {
             InitializeComponent();
-            controller = new AlarmController(this);
-            controller.LoadAlarms();
-            UpdateUI(); 
+
+            // Store the AlarmController object
+            this.controller = controller ?? throw new ArgumentNullException(nameof(controller));
+
+            // Load alarms and update the UI
+            UpdateUI();
+
+            // Initialize UI elements
             label2.Visible = false;
             label1.Text = "";
             button1.Enabled = false;
             button2.Enabled = false;
-
         }
 
         // Method to update the UI based on the current alarms in the list
@@ -52,6 +56,7 @@ namespace Alarm501
             {
                 var newAlarm = addEditAlarmForm.NewAlarm;
                 controller.AddAlarm(newAlarm);  // Pass the new alarm to the controller
+                UpdateUI();  // Refresh the UI
             }
         }
 
@@ -67,10 +72,9 @@ namespace Alarm501
                 if (addEditAlarmForm.ShowDialog() == DialogResult.OK)
                 {
                     controller.UpdateAlarm(addEditAlarmForm.NewAlarm, selectedIndex);
+                    UpdateUI();  // Refresh the UI
                 }
-
             }
-
         }
 
         // Method to handle the "Snooze" button click
@@ -83,7 +87,7 @@ namespace Alarm501
             if (poppinalarm != null)
             {
                 poppinalarm.TriggerSnooze();  // Trigger the snooze event
-
+                UpdateUI();  // Refresh the UI
             }
         }
 
@@ -98,15 +102,11 @@ namespace Alarm501
                 button2.Enabled = false;
                 button1.Enabled = false;
                 poppinalarm.IsOn = false;  // Turn off the alarm
-                UpdateUI();
+                UpdateUI();  // Refresh the UI
             }
         }
 
-        // Handle the selection of an alarm from the list
-        private void UxAlarmList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // Logic for handling alarm list item selection (if needed)
-        }
+        // Method to handle the "Delete" button click
         private void UxDeleteBtn_Click(object sender, EventArgs e)
         {
             // Get the indices of selected items

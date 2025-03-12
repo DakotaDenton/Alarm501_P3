@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35521.163 d17.12
+VisualStudioVersion = 17.12.35521.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alarm501_P2", "Alarm501_P2\Alarm501_P2.csproj", "{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alarm501-GUI", "Alarm501_P2\Alarm501-GUI.csproj", "{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alarm501-Console", "Alarm501ConsoleView\Alarm501-Console.csproj", "{27B1DEF7-945D-49FB-B8B5-138FE7D6AF59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alarm501-MC", "Alarm501-MC\Alarm501-MC.csproj", "{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B1DEF7-945D-49FB-B8B5-138FE7D6AF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B1DEF7-945D-49FB-B8B5-138FE7D6AF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B1DEF7-945D-49FB-B8B5-138FE7D6AF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B1DEF7-945D-49FB-B8B5-138FE7D6AF59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

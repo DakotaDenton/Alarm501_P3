@@ -1,0 +1,15 @@
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\bin\Debug\net8.0\Alarm501-MC.exe
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\bin\Debug\net8.0\Alarm501-MC.deps.json
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\bin\Debug\net8.0\Alarm501-MC.runtimeconfig.json
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\bin\Debug\net8.0\Alarm501-MC.dll
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\bin\Debug\net8.0\Alarm501-MC.pdb
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\obj\Debug\net8.0\Alarm501-MC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\obj\Debug\net8.0\Alarm501-MC.AssemblyInfoInputs.cache
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\obj\Debug\net8.0\Alarm501-MC.AssemblyInfo.cs
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\obj\Debug\net8.0\Alarm501-MC.csproj.CoreCompileInputs.cache
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\obj\Debug\net8.0\Alarm501-MC.sourcelink.json
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\obj\Debug\net8.0\Alarm501-MC.dll
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\obj\Debug\net8.0\refint\Alarm501-MC.dll
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\obj\Debug\net8.0\Alarm501-MC.pdb
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\obj\Debug\net8.0\Alarm501-MC.genruntimeconfig.cache
+C:\Users\Dakot\source\repos\Alarm501_P31\Alarm501-MC\obj\Debug\net8.0\ref\Alarm501-MC.dll

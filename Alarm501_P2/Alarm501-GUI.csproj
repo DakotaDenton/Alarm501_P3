@@ -8,4 +8,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Alarm501-MC\Alarm501-MC.csproj" />
+  </ItemGroup>
+
 </Project>

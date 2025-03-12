@@ -1,4 +1,9 @@
-﻿namespace Alarm501
+﻿using static System.Net.Mime.MediaTypeNames;
+using System.Drawing.Printing;
+using System.Windows.Forms;
+using System.Xml.Linq;
+
+namespace Alarm501
 {
 
     partial class Alarm501
@@ -52,7 +57,7 @@
             // 
             // UxAddBtn
             // 
-            UxAddBtn.Font = new Font("Microsoft Sans Serif", 13.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            UxAddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, FontStyle.Regular, GraphicsUnit.Point, 0);
             UxAddBtn.Location = new Point(29, 20);
             UxAddBtn.Margin = new Padding(2);
             UxAddBtn.Name = "UxAddBtn";
@@ -64,7 +69,7 @@
             // 
             // UxAlarmList
             // 
-            UxAlarmList.Font = new Font("Microsoft Sans Serif", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            UxAlarmList.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 0);
             UxAlarmList.FormattingEnabled = true;
             UxAlarmList.ItemHeight = 25;
             UxAlarmList.Location = new Point(29, 100);
@@ -101,7 +106,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(179, 303);
             label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
@@ -112,7 +117,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(208, 350);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
@@ -150,6 +155,11 @@
             PerformLayout();
         }
 
+        private void UxAlarmList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private System.Windows.Forms.Button UxEditBtn;
@@ -162,4 +172,3 @@
         private Button button3;
     }
 }
-

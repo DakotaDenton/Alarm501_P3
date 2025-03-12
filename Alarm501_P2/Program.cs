@@ -11,11 +11,14 @@ namespace Alarm501
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            // Initialize the main view (Alarm501)
-            var alarmView = new Alarm501();
+            // Initialize the model
+            var model = new Model();
 
-            // Initialize the controller and pass the view to it
-            var alarmController = new AlarmController(alarmView);
+            // Initialize the controller and pass the model to it
+            var alarmController = new AlarmController(model);
+
+            // Initialize the main view (Alarm501) and pass the controller to it
+            var alarmView = new Alarm501(alarmController);
 
             // Run the application, showing the main alarm window
             Application.Run(alarmView);

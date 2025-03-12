@@ -1,10 +1,66 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dakot\\source\\repos\\project-02-alarm501-DakotaDenton123\\",
+  "WorkspaceRootPath": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501_P2.csproj|c:\\users\\dakot\\source\\repos\\project-02-alarm501-dakotadenton123\\alarm501_p2\\alarmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501_P2.csproj|solutionrelative:alarm501_p2\\alarmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501_p2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|solutionrelative:alarm501_p2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501_p2\\alarm501.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|solutionrelative:alarm501_p2\\alarm501.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\alarm501_p2\\alarm501.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|solutionrelative:alarm501_p2\\alarm501.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501-mc\\alarmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|solutionrelative:alarm501-mc\\alarmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501-mc\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|solutionrelative:alarm501-mc\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501_p2\\alarm501.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|solutionrelative:alarm501_p2\\alarm501.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501_p2\\alarm501-gui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|solutionrelative:alarm501_p2\\alarm501-gui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501-mc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|solutionrelative:alarm501-mc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27B1DEF7-945D-49FB-B8B5-138FE7D6AF59}|Alarm501ConsoleView\\Alarm501-Console.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501consoleview\\alarm501consoleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27B1DEF7-945D-49FB-B8B5-138FE7D6AF59}|Alarm501ConsoleView\\Alarm501-Console.csproj|solutionrelative:alarm501consoleview\\alarm501consoleview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501-mc\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|solutionrelative:alarm501-mc\\alarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501_p2\\addeditalarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED3F4A67-49E7-40D3-AA83-50410AD5F3D0}|Alarm501_P2\\Alarm501-GUI.csproj|solutionrelative:alarm501_p2\\addeditalarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501-mc\\alarmsounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|solutionrelative:alarm501-mc\\alarmsounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501-mc\\alarmstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|solutionrelative:alarm501-mc\\alarmstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501-mc\\alarm501-mc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1AEFB6C7-DB0F-4785-A10A-ECD230F3DB48}|Alarm501-MC\\Alarm501-MC.csproj|solutionrelative:alarm501-mc\\alarm501-mc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27B1DEF7-945D-49FB-B8B5-138FE7D6AF59}|Alarm501ConsoleView\\Alarm501-Console.csproj|c:\\users\\dakot\\source\\repos\\alarm501_p31\\alarm501consoleview\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27B1DEF7-945D-49FB-B8B5-138FE7D6AF59}|Alarm501ConsoleView\\Alarm501-Console.csproj|solutionrelative:alarm501consoleview\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +70,192 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Alarm501.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\Alarm501.cs",
+              "RelativeDocumentMoniker": "Alarm501_P2\\Alarm501.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\Alarm501.cs",
+              "RelativeToolTip": "Alarm501_P2\\Alarm501.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAYwHsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:57:32.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Alarm501.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\Alarm501.Designer.cs",
+              "RelativeDocumentMoniker": "Alarm501_P2\\Alarm501.Designer.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\Alarm501.Designer.cs",
+              "RelativeToolTip": "Alarm501_P2\\Alarm501.Designer.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAIwHcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:57:12.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Alarm501.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\Alarm501.cs",
+              "RelativeDocumentMoniker": "Alarm501_P2\\Alarm501.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\Alarm501.cs [Design]",
+              "RelativeToolTip": "Alarm501_P2\\Alarm501.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:56:53.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddEditAlarm.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\AddEditAlarm.cs",
+              "RelativeDocumentMoniker": "Alarm501_P2\\AddEditAlarm.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\AddEditAlarm.cs",
+              "RelativeToolTip": "Alarm501_P2\\AddEditAlarm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:34:19.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Alarm.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\Alarm.cs",
+              "RelativeDocumentMoniker": "Alarm501-MC\\Alarm.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\Alarm.cs",
+              "RelativeToolTip": "Alarm501-MC\\Alarm.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:34:09.375Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AlarmController.cs",
-              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\project-02-alarm501-DakotaDenton123\\Alarm501_P2\\AlarmController.cs",
-              "RelativeDocumentMoniker": "Alarm501_P2\\AlarmController.cs",
-              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\project-02-alarm501-DakotaDenton123\\Alarm501_P2\\AlarmController.cs",
-              "RelativeToolTip": "Alarm501_P2\\AlarmController.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAkwKUAAAA1AAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\Program.cs",
+              "RelativeDocumentMoniker": "Alarm501_P2\\Program.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\Program.cs",
+              "RelativeToolTip": "Alarm501_P2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T21:18:07.181Z",
+              "WhenOpened": "2025-03-12T20:22:49.072Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Alarm501ConsoleView.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501ConsoleView\\Alarm501ConsoleView.cs",
+              "RelativeDocumentMoniker": "Alarm501ConsoleView\\Alarm501ConsoleView.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501ConsoleView\\Alarm501ConsoleView.cs",
+              "RelativeToolTip": "Alarm501ConsoleView\\Alarm501ConsoleView.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAwwEkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:22:18.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AlarmController.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\AlarmController.cs",
+              "RelativeDocumentMoniker": "Alarm501-MC\\AlarmController.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\AlarmController.cs",
+              "RelativeToolTip": "Alarm501-MC\\AlarmController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:21:19.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Alarm501-GUI.csproj",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\Alarm501-GUI.csproj",
+              "RelativeDocumentMoniker": "Alarm501_P2\\Alarm501-GUI.csproj",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501_P2\\Alarm501-GUI.csproj",
+              "RelativeToolTip": "Alarm501_P2\\Alarm501-GUI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-12T20:19:26.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AlarmSounds.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\AlarmSounds.cs",
+              "RelativeDocumentMoniker": "Alarm501-MC\\AlarmSounds.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\AlarmSounds.cs",
+              "RelativeToolTip": "Alarm501-MC\\AlarmSounds.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:33:22.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\Model.cs",
+              "RelativeDocumentMoniker": "Alarm501-MC\\Model.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\Model.cs",
+              "RelativeToolTip": "Alarm501-MC\\Model.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:20:11.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AlarmState.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\AlarmState.cs",
+              "RelativeDocumentMoniker": "Alarm501-MC\\AlarmState.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\AlarmState.cs",
+              "RelativeToolTip": "Alarm501-MC\\AlarmState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:20:27.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501ConsoleView\\Program.cs",
+              "RelativeDocumentMoniker": "Alarm501ConsoleView\\Program.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501ConsoleView\\Program.cs",
+              "RelativeToolTip": "Alarm501ConsoleView\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:16:31.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\Program.cs",
+              "RelativeDocumentMoniker": "Alarm501-MC\\Program.cs",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\Program.cs",
+              "RelativeToolTip": "Alarm501-MC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T20:18:02.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Alarm501-MC.csproj",
+              "DocumentMoniker": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\Alarm501-MC.csproj",
+              "RelativeDocumentMoniker": "Alarm501-MC\\Alarm501-MC.csproj",
+              "ToolTip": "C:\\Users\\Dakot\\source\\repos\\Alarm501_P31\\Alarm501-MC\\Alarm501-MC.csproj",
+              "RelativeToolTip": "Alarm501-MC\\Alarm501-MC.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-12T20:22:44.917Z"
             }
           ]
         }
