@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Media;
+using System.Reflection;
 using System.Security.Claims;
 using System.Timers;
 using System.Windows.Forms;
@@ -10,77 +11,41 @@ namespace Alarm501
 {
     public class AlarmController
     {
-        private Alarm501 view;  
-        private List<Alarm> alarms = new List<Alarm>();
-        private System.Windows.Forms.Timer timer;
+        private Model _model;
+        private ViewUpdateDisplay _updateDisplay;
 
-        public AlarmController(Alarm501 view)
+        public AlarmController(Model model)
         {
-            this.view = view;
-            this.alarms = new List<Alarm>();
-            this.timer = new System.Windows.Forms.Timer();
-            this.timer.Interval = 1000; 
-            this.timer.Tick += AlarmTimer_Tick;
-            this.timer.Start();
-            LoadAlarms();
-            foreach (var alarm in alarms)
-            {
-                alarm.SnoozeTriggered += OnSnoozeTriggered;
-                alarm.AlarmTriggered += OnAlarmTriggered;
+            _model = model;
+        }
 
+        public void CheckAlarms()
+        {
+            DateTime currentTime = DateTime.Now;
+
+            // Loop through all alarms in the Model
+            for (int i = 0; i < _model.GetCount(); i++)
+            {
+                Alarm alarm = _model.GetAlarm(i);
+
+                // Check if the alarm should trigger
+                if (alarm.ShouldTrigger(currentTime))
+                {
+                    // Trigger the alarm
+                    alarm.TriggerAlarm();
+                }
             }
         }
 
         // Method to load alarms from file
-        public void LoadAlarms()
-        {
-            alarms.Clear();
-            if (File.Exists("alarms.txt"))
-            {
-                string[] lines = File.ReadAllLines("alarms.txt");
-                foreach (var line in lines)
-                {
-                    string[] parts = line.Split(',');
-                    if (parts.Length == 5 && DateTime.TryParse(parts[0], out DateTime time))
-                    {
-                        bool isOn = bool.Parse(parts[1].Trim());
-                        int snoozeTime = int.Parse(parts[2].Trim());
-                        AlarmSound selectedSound = (AlarmSound)Enum.Parse(typeof(AlarmSound), parts[3].Trim());
-                        DayOfWeek[] repeatDays = (DayOfWeek[])Enum.GetValues(typeof(DayOfWeek));
 
-                        var alarm = new Alarm(time, isOn, selectedSound, snoozeTime, repeatDays);
-                        alarms.Add(alarm);
-
-                        // Subscribe to events here
-
-                    }
-                }
-            }
-            foreach (var alarm in alarms)
-            {
-                alarm.SnoozeTriggered += OnSnoozeTriggered;
-                alarm.AlarmTriggered += OnAlarmTriggered;
-            }
-        }
-
-        // Method to save alarms to file
-        public void SaveAlarms()
-        {
-            using (StreamWriter writer = new StreamWriter("alarms.txt"))
-            {
-                foreach (var alarm in alarms)
-                {
-                    writer.WriteLine($"{alarm.Time:hh:mm tt},{alarm.IsOn},{alarm.SnoozeTime},{alarm.SelectedSound},{string.Join(",", alarm.RepeatDays)}");
-                }
-            }
-        }
 
         // Method to add a new alarm
         public void AddAlarm(Alarm newAlarm)
         {
             newAlarm.SnoozeTriggered += OnSnoozeTriggered;
             newAlarm.AlarmTriggered += OnAlarmTriggered;
-            alarms.Add(newAlarm);
+            _model.alarms.Add(newAlarm);
             SaveAlarms();
             view.UpdateUI();  // Update the UI after adding the alarm
         }
@@ -88,7 +53,7 @@ namespace Alarm501
         // Method to update an existing alarm
         public void UpdateAlarm(Alarm updatedAlarm, int index)
         {
-            alarms[index] = updatedAlarm;
+            _model.alarms[index] = updatedAlarm;
             SaveAlarms();
             view.UpdateUI();
         }
@@ -96,9 +61,9 @@ namespace Alarm501
         // Method to remove an alarm
         public void RemoveAlarm(int index)
         {
-            alarms.RemoveAt(index);
+            _model.alarms.RemoveAt(index);
             SaveAlarms();
-            view.UpdateUI();
+            Alarm501.
         }
 
         // Method to get all alarms
@@ -177,7 +142,7 @@ namespace Alarm501
             alarm.IsOn = true;
             // Save and update the alarms
             SaveAlarms();
-            view.UpdateUI();
+            Alarm501.UpdateUI();
 
         }
         private void OnAlarmTriggered(Alarm alarm)

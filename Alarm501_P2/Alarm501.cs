@@ -102,11 +102,6 @@ namespace Alarm501
             }
         }
 
-        // Handle the selection of an alarm from the list
-        private void UxAlarmList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // Logic for handling alarm list item selection (if needed)
-        }
         private void UxDeleteBtn_Click(object sender, EventArgs e)
         {
             // Get the indices of selected items
